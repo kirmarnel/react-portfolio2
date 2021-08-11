@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url("./assets/images/monstera.jpg");
+    background-size: cover;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(22, 183, 223);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 55px;
+    color:  rgb(22, 183, 223);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(102, 182, 119);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+opacity: 50%;
+}

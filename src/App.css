@@ -37,3 +37,26 @@ a {
 a:hover {
 opacity: 50%;
 }
+
+#selfImg {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#aboutMe {
+    background-color: rgba(255, 255, 255, 0.295);
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+}

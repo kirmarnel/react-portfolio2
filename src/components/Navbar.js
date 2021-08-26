@@ -13,7 +13,7 @@ const toggleClass = () => {
 return (
 <div id='navbar'>
     <h1 id='title'>Kirsten Nelson</h1>
-<ul className={isActive ? "navActive" : "navHidden" }>
+<ul className={isActive ? "navHidden" : "navActive" }>
     <li><a href='#'> Home </a></li>
     <li><a href='#'> About Me </a></li>
     <li><a href='#'> Projects </a></li>

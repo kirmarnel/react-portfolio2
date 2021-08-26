@@ -1,36 +1,54 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body {
-    background: url("./assets/images/monstera.jpg");
+html {
+    background: url("./assets/images/Mountain.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
 }
+
+/* html { 
+    background: url(./assets/images/Mountain.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+  } */
+
 #navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-height: 8vh;
+    background-color: rgb(23, 100, 119);
 }
 
 #title {
     text-align: center;
-    font-size: 100px;
-    color: rgb(22, 183, 223);
     font-family: 'Montserrat', sans-serif;
+    color: rgb(236, 236, 236);
 }
 
 #subtitle {
     text-align: center;
     font-size: 55px;
-    color:  rgb(22, 183, 223);
+    /* color:  rgb(22, 183, 223); */
     font-family: 'Montserrat', sans-serif;
     
 }
 
 a {
     text-decoration: none;
-    font-size: 30px;
-    color: rgb(102, 182, 119);
+    font-size: 20px;
+    color: rgb(236, 236, 236);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -38,6 +56,22 @@ a:hover {
 opacity: 50%;
 }
 
+ul {
+    list-style: none;
+}
+
+#burgerMenu div {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(236, 236, 236);
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#burgerMenu {
+    display: none;
+}
+ 
 #selfImg {
     width: 200px;
     height: 200px;
@@ -60,3 +94,61 @@ opacity: 50%;
 p {
     text-align: center;
 }
+
+.navActive {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(23, 100, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
+.navHidden {
+    transition: transform 0.5s ease-in;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: rgb(23, 100, 119);
+}
+
+#footer {
+    background-color: rgb(23, 100, 119);
+    min-height: 8vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navHidden {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(23, 100, 119);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+  #burgerMenu {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right:5px;
+  }
+}
+
